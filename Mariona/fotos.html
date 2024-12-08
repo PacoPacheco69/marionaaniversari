@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliç Aniversari, Mariona</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="cor.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<nav class="header-content">
+    <a href="Inicio.html" class="btn">👈🏼 Inici</a>
+</nav>
+
+<section id="galeria">
+    <h2>Fotos</h2>
+    <div class="gallery-grid">
+        <!-- Añade aquí las imágenes -->
+        <img src="foto1jpg.jpg" alt="Foto 1">
+        <img src="foto3.jpg" alt="Foto 2">
+        <img src="foto4.jpg" alt="Foto 3">
+        <img src="foto5.jpg" alt="Foto 4">
+        <img src="foto6.jpg" alt="Foto 5">
+        <img src="foto7.jpg" alt="Foto 6">
+        <img src="foto8.jpg" alt="Foto 7">
+        <img src="foto9.jpg" alt="Foto 8">
+        <img src="foto10.jpg" alt="Foto 9">
+        <img src="foto11.jpg" alt="Foto 10">
+        <img src="foto12.jpg" alt="Foto 11">
+        <img src="foto13.jpg" alt="Foto 12">
+        <img src="foto14.jpg" alt="Foto 13">
+        <img src="foto15.jpg" alt="Foto 14">
+        <img src="foto16.jpg" alt="Foto 15">
+        <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+        </video>
+
+        <!-- JavaScript -->
+        <script>
+            document.querySelectorAll('.gallery-grid img').forEach(img => {
+                img.onload = () => {
+                    img.style.setProperty('--image-width', img.naturalWidth);
+                    img.style.setProperty('--image-height', img.naturalHeight);
+                };
+            });
+        </script>
+    </div>
+</section>
